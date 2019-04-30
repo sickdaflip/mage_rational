@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<title><?php echo ($this->getForcedTitle()) ? Mage::getStoreConfig('design/head/title_prefix').''.$this->getForcedTitle().' '.Mage::getStoreConfig('design/head/title_suffix') : $this->getTitle() ?></title>
+<meta name="description" content="<?php echo htmlspecialchars($this->getDescription()) ?>"/>
+<meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#337ab7"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon"/>
+<link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="<?php echo $this->getSkinUrl('dist/assets/img/icon152.png') ?>"/>
+<link rel="manifest" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB).'manifest.json' ?>" />
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('dist/assets/js/jquery.min.js') ?>"></script>
+<script>jQuery.noConflict();</script>
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('dist/assets/js/app.js') ?>"></script>
+<?php echo $this->getCssJsHtml() ?>
+<?php echo $this->getChildHtml() ?>
+<?php echo $this->helper('core/js')->getTranslatorScript() ?>
+<?php echo $this->getIncludes() ?>

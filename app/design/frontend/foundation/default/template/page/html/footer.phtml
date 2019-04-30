@@ -1,0 +1,211 @@
+<footer>
+    <div class="footer-top">
+        <a href="#nav-top" id="backtotop">
+            <div class="backtotop">
+                <span class="navFooterBackToTopText"><?php echo $this->__('Zur&uuml;ck zum Seitenanfang') ?></span>
+            </div>
+        </a>
+    </div>
+    <div class="footer-extras">
+        <div class="content">
+            <a href="<?php echo Mage::getUrl('', array('_direct' =>'lieferung')); ?>">
+                <img src="<?php echo $this->getSkinUrl('dist/assets/img/versandkostenfrei.png') ?>"
+                     alt="kostenfreie Lieferung ab 99 EUR">
+            </a>
+        </div>
+    </div>
+    <div class="footer-info">
+        <div class="content">
+            <div class="footer_links">
+                <p><?php echo $this->__('Informationen') ?></p>
+                <ul>
+                    <li>
+                        <a href="<?php echo Mage::getUrl(''); ?>"><?php echo $this->__('Startseite') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo Mage::getUrl('', array('_direct' =>'lieferung')); ?>"><?php echo $this->__('Lieferung') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten')); ?>"><?php echo $this->__('Zahlungsarten') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo Mage::getUrl('', array('_direct' =>'streitschlichtung')); ?>"><?php echo $this->__('Streitschlichtung') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo Mage::getUrl('', array('_direct' =>'batteriegesetz')); ?>"><?php echo $this->__('Batteriegesetz') ?></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_service">
+                <p><?php echo $this->__('Kundenservice') ?></p>
+                <ul>
+                    <li>
+                        <a href="<?php echo Mage::getUrl('', array('_direct' => 'contacts')); ?>"><?php echo $this->__('Kontakt') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/fax/faxbestellung.pdf'; ?>"
+                           target="_blank" rel="nofollow noopener noreferrer">Faxbestellung</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-payments">
+        <div class="payments">
+            <ul>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#paypal')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/paypal-white.png') ?>"
+                             alt="PayPal Logo"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#amazon')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/amazon-payments-white.png') ?>"
+                             alt="Amazon payments"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#sofort')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/sofort-white.png') ?>"
+                             alt="Sofortüberweisung Logo"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#moneyorder')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/vorkasse-white.png') ?>"
+                             alt="Vorkasse"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#creditcard')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/creditcard-white.png') ?>"
+                             alt="Kreditkarte"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#invoice')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/invoice-white.png') ?>"
+                             alt="Rechnung"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#finanz')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/finanz-white.png') ?>"
+                             alt="Finanzierung"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'zahlungsarten#sepa')); ?>">
+                        <img src="<?php echo $this->getSkinUrl('dist/assets/img/sepa-white.png') ?>"
+                             alt="Sepa Lastschrift"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="org">
+            <ul>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'agb')); ?>"><?php echo $this->__('AGB') ?></a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'impressum')); ?>"><?php echo $this->__('Impressum') ?></a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'datenschutz')); ?>"><?php echo $this->__('Datenschutz') ?></a>
+                </li>
+                <li>
+                    <a href="<?php echo Mage::getUrl('', array('_direct' =>'sitemap')); ?>"><?php echo $this->__('Sitemap') ?></a>
+                </li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://facebook.com/gastrodax/" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCTr6z7_W4adeggGR1Sa717g" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-youtube-square"></i></a></li>
+                <li><a href="https://twitter.com/gastrodax" target="_blank" rel="nofollow noopener noreferrer"><i class="fab fa-twitter-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>© 1990 - <?php echo date("Y"); ?> New Gastroline GmbH</p>
+        </div>
+    </div>
+</footer>
+<?php
+/**
+ * This is an example of integrating Trusted Shops Customer Reviews
+ * marked with structured data into your website
+ * Make sure you replace value of $tsid with your Trusted Shops ID
+ * Make sure you have a writing permission to the
+ * folder set in $cacheFileName
+ * Requires version PHP 5.+
+ */
+$tsId = 'X6B5E9287FD5871CE74DA1B1775EB2D64';
+$cacheFileName = Mage::getBaseDir('base') . '/var/tmp/' . $tsId . '.json';
+$cacheTimeOut = 43200; // half a day
+$apiUrl = 'http://api.trustedshops.com/rest/public/v2/shops/' . $tsId . '/quality/reviews.json';
+$reviewsFound = false;
+
+if (!function_exists('trustedshopscachecheck')) {
+    function trustedshopscachecheck($filename_cache, $timeout = 10800)
+    {
+        if (file_exists($filename_cache) && time() - filemtime($filename_cache) < $timeout) {
+            return true;
+        }
+        return false;
+    }
+}
+
+// check if cached version exists
+if (!trustedshopscachecheck($cacheFileName, $cacheTimeOut)) {
+    // load fresh from API
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_HEADER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, false);
+    curl_setopt($ch, CURLOPT_URL, $apiUrl);
+    $output = curl_exec($ch);
+    curl_close($ch);
+    // Write the contents back to the file
+    // Make sure you can write to file's destination
+    file_put_contents($cacheFileName, $output);
+}
+if ($jsonObject = json_decode(file_get_contents($cacheFileName), true)) {
+    $result = $jsonObject['response']['data']['shop']['qualityIndicators']['reviewIndicator']['overallMark'];
+    $count = $jsonObject['response']['data'] ['shop']['qualityIndicators']['reviewIndicator']['activeReviewCount'];
+    $shopName = $jsonObject['response']['data']['shop']['name'];
+    $max = "5.00";
+    if ($count > 0) {
+        $reviewsFound = true;
+    }
+}
+if ($reviewsFound) {
+    // Output aggregated reviews markup:
+    $ts_snippet = '<script type="application/ld+json">';
+    $ts_snippet .= '{';
+    $ts_snippet .= '"@context": "http://schema.org",';
+    $ts_snippet .= '"@type": "Organization",';
+    $ts_snippet .= '"name": "' . $shopName . '",';
+    $ts_snippet .= '"url": "' . Mage::getBaseUrl() . '",';
+    $ts_snippet .= '"logo": "' . $this->getSkinUrl('dist/assets/img/logo.png') . '",';
+    $ts_snippet .= '"contactPoint": [{';
+    $ts_snippet .= '"@type": "ContactPoint",';
+    $ts_snippet .= '"telephone": "+49-8004566000",';
+    $ts_snippet .= '"contactType": "customer service"';
+    $ts_snippet .= '}],';
+    $ts_snippet .= '"sameAs": [';
+    $ts_snippet .= '"https://www.facebook.com/gastrodax",';
+    $ts_snippet .= '"https://plus.google.com/+gastrodax",';
+    $ts_snippet .= '"https://twitter.com/gastrodax",';
+    $ts_snippet .= '"https://www.youtube.com/channel/UCTr6z7_W4adeggGR1Sa717g"';
+    $ts_snippet .= '],';
+    $ts_snippet .= '"aggregateRating" : {';
+    $ts_snippet .= '"@type": "AggregateRating",';
+    $ts_snippet .= '"ratingValue" : "' . $result . '",';
+    $ts_snippet .= '"bestRating" : "' . $max . '",';
+    $ts_snippet .= '"ratingCount" : "' . $count . '"';
+    $ts_snippet .= '}}';
+    $ts_snippet .= '</script>';
+    echo $ts_snippet;
+}
